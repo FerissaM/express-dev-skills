@@ -5,7 +5,13 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1>Welcome to<%= title %></h1>
+    <p>This is the index page where you can view a list of skills. <%= title %></p>
+    <h2>List of Skills:</h2>
+    <ul>
+      <% skills.forEach(skill => { %>
+        <li><%= skill.name %> - <%= skill.proficiency %></li>
+      <% }) %>
+    </ul>
   </body>
 </html>
