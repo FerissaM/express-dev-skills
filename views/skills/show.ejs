@@ -1,3 +1,6 @@
 <h1>Skill Details</h1>
 <p>Name: <%= skill.name %></p>
 <p>Proficiency: <%= skill.proficiency %></p>
+<form action="/skills/<%= skill.id %>?_method=DELETE" method="POST">
+    <button type="submit">Delete Skill</button>
+</form>
