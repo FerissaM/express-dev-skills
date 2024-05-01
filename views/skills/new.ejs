@@ -1,8 +1,15 @@
-<h1>Add New Skill</h1>
-<form action="/skills" method="POST">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name">
-  <label for="proficiency">Proficiency:</label>
-  <input type="text" id="proficiency" name="proficiency">
-  <button type="submit">Create</button>
-</form>
+<body>
+  <h2>New Skill</h2>
+  <form action="/skills" method="POST" autocomplete="off">
+  <label for="skill">Skill:
+  <input type="text" name="skill" id="newSkillName">
+  </label>
+  <label for="level"> Level:
+  <input type="number" name="level" id="newSkillLvl">
+  </label>
+  <label for="description">Description:
+  <input type="text" name="description" id="newSkillDesc">
+  </label>
+  <button type="submit btn">Save</button>
+  </form>
+</body>

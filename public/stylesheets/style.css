@@ -4,5 +4,19 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: blue;
+}
+
+.table {
+  width: 50%;
+}
+
+#title {
+  color: black; 
+  text-align: center;
+}
+
+#desc {
+  color: black; 
+  text-align: center;
 }
